@@ -68,12 +68,10 @@
    > "fixcode": "eslint --fix ./App"
    > Run this script by npm run fixcode
  * To run lint before you run your app in ios/android
-   > For ios: "ios": "npm run lint && react-native run-ios"
+   *> For ios: "ios": "npm run lint && react-native run-ios"
+   *> Run this script by: npm run ios
    
-   > Run this script by npm run ios
-   
-   > For android: "android": "npm run lint && react-native run-android"
-   
-   > Run this script by npm run android
+   *> For android: "android": "npm run lint && react-native run-android"
+   *> Run this script by: npm run android
 
        
