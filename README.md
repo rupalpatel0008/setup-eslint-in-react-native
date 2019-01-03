@@ -61,9 +61,9 @@
        }`
       
 **Step 4:** Add babel-eslint as a parser for the property standard inside your package.json
-  > `"standard": {
-     "parser": "babel-eslint"
-   },`
+   > `"standard": {
+      "parser": "babel-eslint"
+    },`
 
 **Step 5:** Use eslint by adding some scripts in your package.json
  * To lint:
