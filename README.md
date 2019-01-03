@@ -28,3 +28,49 @@
     * ? What format do you want your config file to be in?
       > JavaScript
    *This will create a .eslintrc.js file for your project
+   
+ **Step 3:** Update the .eslintrc.js file
+  * Add "plugin:react/recommended" for the "extends" property
+   > "extends": ["eslint:recommended", "plugin:react/recommended"]
+  * Use babel-eslint as the parser
+   > "parser": "babel-eslint",
+  * Add the property "experimentalObjectRestSpread" inside "ecmaFeatures"
+   > `"ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }`
+  * Add sourceType inside the parserOptions
+   > `"parserOptions": {
+       ...
+       "sourceType": "module"
+      },`
+  * Use plugin react
+   > `"plugins": [
+        "react"
+       ],`
+  * Add some rules that you need
+   > Refer the example .eslintrc.js
+  * Add globals that are required
+   > Refer the example .eslintrc.js
+  * Add the property "settings"
+   > `settings: {
+       react: {
+        version: require('./package.json').dependencies.react,
+       }
+      }`
+      
+**Step 4:** Use eslint by adding some scripts in your package.json
+ * To lint:
+  > "lint": "eslint ./App"
+  > Run this script by npm run lint
+ * To fix code:
+  > "fixcode": "eslint --fix ./App"
+  > Run this script by npm run fixcode
+ * To run lint before you run your app in ios/android
+  > For ios: "ios": "npm run lint && react-native run-ios"
+  > Run this script by npm run ios
+  > For android: "android": "npm run lint && react-native run-android"
+  > Run this script by npm run android
+
+       
