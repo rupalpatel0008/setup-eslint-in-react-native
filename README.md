@@ -63,15 +63,15 @@
 **Step 4:** Use eslint by adding some scripts in your package.json
  * To lint:
    > "lint": "eslint ./App"
-   > Run this script by npm run lint
+   > Run this script by: npm run lint
  * To fix code:
    > "fixcode": "eslint --fix ./App"
-   > Run this script by npm run fixcode
+   > Run this script by: npm run fixcode
  * To run lint before you run your app in ios/android
-   *> For ios: "ios": "npm run lint && react-native run-ios"
-   *> Run this script by: npm run ios
+   * > For ios: "ios": "npm run lint && react-native run-ios"
+   * > Run this script by: npm run ios
    
-   *> For android: "android": "npm run lint && react-native run-android"
-   *> Run this script by: npm run android
+   * > For android: "android": "npm run lint && react-native run-android"
+   * > Run this script by: npm run android
 
        
