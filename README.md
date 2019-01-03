@@ -31,39 +31,39 @@
    
  **Step 3:** Update the .eslintrc.js file
   * Add "plugin:react/recommended" for the "extends" property
-   > "extends": ["eslint:recommended", "plugin:react/recommended"]
+    > "extends": ["eslint:recommended", "plugin:react/recommended"]
   * Use babel-eslint as the parser
-   > "parser": "babel-eslint",
+    > "parser": "babel-eslint",
   * Add the property "experimentalObjectRestSpread" inside "ecmaFeatures"
-   > `"ecmaFeatures": {
+    > `"ecmaFeatures": {
       "jsx": true,
       "modules": true,
       "experimentalObjectRestSpread": true
     }`
   * Add sourceType inside the parserOptions
-   > `"parserOptions": {
-       ...
-       "sourceType": "module"
-      },`
+    > `"parserOptions": {
+        ...
+        "sourceType": "module"
+       },`
   * Use plugin react
-   > `"plugins": [
-        "react"
-       ],`
+    > `"plugins": [
+         "react"
+        ],`
   * Add some rules that you need
-   > Refer the example .eslintrc.js
+    > Refer the example .eslintrc.js
   * Add globals that are required
-   > Refer the example .eslintrc.js
+    > Refer the example .eslintrc.js
   * Add the property "settings"
-   > `settings: {
-       react: {
-        version: require('./package.json').dependencies.react,
-       }
-      }`
+    > `settings: {
+        react: {
+         version: require('./package.json').dependencies.react,
+        }
+       }`
       
 **Step 4:** Add babel-eslint as a parser for the property standard inside your package.json
- > `"standard": {
-    "parser": "babel-eslint"
-  },`
+  > `"standard": {
+     "parser": "babel-eslint"
+   },`
 
 **Step 5:** Use eslint by adding some scripts in your package.json
  * To lint:
